@@ -25,16 +25,16 @@ import xbmcplugin
 import plugintools, ioncube, scrapertools, unwise
 import time, random
 
-__home__ = xbmc.translatePath(os.path.join('special://home/addons/plugin.video.fabiking/', ''))
+__home__ = xbmc.translatePath(os.path.join('special://home/addons/plugin.video.palcotv/', ''))
 __temp__ = xbmc.translatePath(os.path.join('special://home/userdata/playlists/tmp', ''))
 __playlists__ = xbmc.translatePath(os.path.join('special://home/userdata/playlists', ''))
-__art__ = xbmc.translatePath(os.path.join('special://home/addons/plugin.video.fabiking/art', ''))
-__cbx_pages__ = xbmc.translatePath(os.path.join('special://home/addons/plugin.video.fabiking/art/cbx', ''))
-__icons__ = xbmc.translatePath(os.path.join('special://home/addons/plugin.video.fabiking/art/icons', ''))
+__art__ = xbmc.translatePath(os.path.join('special://home/addons/plugin.video.palcotv/art', ''))
+__cbx_pages__ = xbmc.translatePath(os.path.join('special://home/addons/plugin.video.palcotv/art/cbx', ''))
+__icons__ = xbmc.translatePath(os.path.join('special://home/addons/plugin.video.palcotv/art/icons', ''))
 __libdir__ = xbmc.translatePath(os.path.join('special://xbmc/system/players/dvdplayer/', ''))
-__tools__ = xbmc.translatePath(os.path.join('special://home/addons/plugin.video.fabiking/resources/tools', ''))
+__tools__ = xbmc.translatePath(os.path.join('special://home/addons/plugin.video.palcotv/resources/tools', ''))
 __addons__ = xbmc.translatePath(os.path.join('special://home/addons/', ''))
-__resources__ = xbmc.translatePath(os.path.join('special://home/addons/plugin.video.fabiking/resources', ''))
+__resources__ = xbmc.translatePath(os.path.join('special://home/addons/plugin.video.palcotv/resources', ''))
 
 addonName           = xbmcaddon.Addon().getAddonInfo("name")
 addonVersion        = xbmcaddon.Addon().getAddonInfo("version")
@@ -111,7 +111,7 @@ from resources.tools.epg_txt import *
 
 # Entry point
 def run():
-    plugintools.log('[%s %s] ---> fabiking.run <--- ' % (addonName, addonVersion))
+    plugintools.log('[%s %s] ---> PalcoTV.run <--- ' % (addonName, addonVersion))
     
     plugintools.log("")
     plugintools.modo_vista("list")
@@ -152,7 +152,7 @@ def main_list(params):
     except:
         mastermenu = 'http://pastebin.com/raw.php?i=RBEDZWqN'
         data = plugintools.read(mastermenu)
-        xbmc.executebuiltin("Notification(%s,%s,%i,%s)" % ('fabiking', "XML no reconocido...", 3 , __art__+'icon.png'))
+        xbmc.executebuiltin("Notification(%s,%s,%i,%s)" % ('PalcoTV', "XML no reconocido...", 3 , __art__+'icon.png'))
 
     matches = plugintools.find_multiple_matches(data,'<menu_info>(.*?)</menu_info>')
     for entry in matches:
