@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="plugin.video.fabiking" name="fabiking" version="0.3.2" provider-name="fabiking">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.requests" /> 
+    <import addon="plugin.video.youtube" />	
+	<import addon="script.module.youtube.dl" optional="true"/>
+	<import addon="plugin.video.SportsDevil" optional="true"/>
+	<import addon="plugin.video.p2p-streams" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Fabiking Television</summary>
+    <description lang="en">[COLOR red][B]Fabiking Television[/B][/COLOR] Disfruta de toda la television de [B][COLOR blue]Internet[/COLOR][/B] con toda tu familia. Esta aplicación agrupa multitud de canales y prgramas adecuados para toda la familia. </description>
+    <disclaimer lang="en">[B]Los canales ofrecidos dependen de la disponibilidad de los servidores en donde estan alojados. Siempre se intentara ofrecer la mejor cobertura posible.[/B] Fabiking television lle agradece su confianza.</disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
