@@ -5692,7 +5692,7 @@ def xml_skin():
                 mastermenu = plugintools.get_setting("mastermenu")
                 if mastermenu == "":
                     plugintools.log("[PalcoTV.xml_skin: No definido")
-                    mastermenu = 'https://dl.dropboxusercontent.com/u/8036850/PalcoTV/PalcoTV-0.3.2.xml'
+                    mastermenu = 'http://pastebin.com/raw.php?i=RBEDZWqN'
                     
                     # Control para ver la intro de PalcoTV
                     ver_intro = plugintools.get_setting("ver_intro")
