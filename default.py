@@ -2704,7 +2704,7 @@ def playlists_m3u(params):  # Biblioteca online
             params["title"]=title
         elif ciny == "Largo Barbate M3U":
             plugintools.add_item( action="getfile_http" , plot = ciny , title = '[COLOR lightyellow]' + ciny + '[/COLOR] ' + online , url= dixy , thumbnail = __art__ + winy , fanart = __art__ + 'fanart.jpg' , folder = True , isPlayable = False )
-            # title = ciny
+            title = ciny
             params["title"]=title
         elif ciny == "XBMC Mexico":
             plugintools.add_item( action="getfile_http" , plot = ciny , title = '[COLOR lightyellow]' + ciny + '[/COLOR] ' + online , url= dixy , thumbnail = __art__ + winy , fanart = __art__ + 'fanart.jpg' , folder = True , isPlayable = False )
