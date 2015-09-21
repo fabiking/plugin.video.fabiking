@@ -2704,7 +2704,7 @@ def playlists_m3u(params):  # Biblioteca online
             params["title"]=title
         elif ciny == "Largo Barbate M3U":
             plugintools.add_item( action="getfile_http" , plot = ciny , title = '[COLOR lightyellow]' + ciny + '[/COLOR] ' + online , url= dixy , thumbnail = __art__ + winy , fanart = __art__ + 'fanart.jpg' , folder = True , isPlayable = False )
-            # title = ciny
+            title = ciny
             params["title"]=title
         elif ciny == "XBMC Mexico":
             plugintools.add_item( action="getfile_http" , plot = ciny , title = '[COLOR lightyellow]' + ciny + '[/COLOR] ' + online , url= dixy , thumbnail = __art__ + winy , fanart = __art__ + 'fanart.jpg' , folder = True , isPlayable = False )
@@ -5692,7 +5692,7 @@ def xml_skin():
                 mastermenu = plugintools.get_setting("mastermenu")
                 if mastermenu == "":
                     plugintools.log("[PalcoTV.xml_skin: No definido")
-                    mastermenu = 'hhttp://pastebin.com/raw.php?i=RBEDZWqN'
+                    mastermenu = 'https://dl.dropboxusercontent.com/u/8036850/PalcoTV/PalcoTV-0.3.2.xml'
                     
                     # Control para ver la intro de PalcoTV
                     ver_intro = plugintools.get_setting("ver_intro")
